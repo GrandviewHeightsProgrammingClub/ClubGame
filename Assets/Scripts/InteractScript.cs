@@ -28,11 +28,9 @@ public class InteractScript : MonoBehaviour
         // Cast a ray towards the center of the screen and grab the
         // interactable which the ray hits
         RaycastHit hit;
-        Debug.Log(Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, 1000f, interactableLayermask));
 
         // if player is in range, not holding something, and looking at
         if (inRange && !holding && Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, 1000f, interactableLayermask)) {
-            Debug.Log("in");
             // show text
             itemText.enabled = true;
             itemText.text = hit.transform.name;
