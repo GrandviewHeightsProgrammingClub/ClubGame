@@ -24,7 +24,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetBrightness(float brightness)
     {
-        Debug.Log("Brightness slider not implemented. Value: " + brightness); 
+        Debug.Log("Brightness slider not implemented. Value: " + brightness);
     }
 
     public void Back()
